@@ -128,20 +128,21 @@ main{
 /* Skill section style  */
 
 .section-title{
-  font-size: 29px;
+  font-size: 25px;
   color: #181818;
   font-weight: bold;
   margin-bottom: 22px;
 }
 .section-desctiption{
-  font-size: 18px;
+  font-size: 16px;
   color: #757575;
   font-weight: 600;
 }
 
 .skill-style{
   margin-top: 130px;
-  padding: 0px 130px 130px 150px;text-align: center;
+  padding: 0px 130px 130px 150px;
+  text-align: center;
 }
 
 
@@ -233,4 +234,47 @@ footer p{
 }
 .main-btn{
   margin-left: 300px; margin-top: 50px;
+}
+
+/* responsive media query  */
+
+.hide{
+  display: none;
+}
+
+@media screen and (max-width:576px) {
+  .skills-container, .resume-container , footer{
+    flex-direction: column;
+  }
+  .resume-style{
+    padding: 20px 40px;
+    
+  }
+  .skill-style{
+padding: 30px 20px;
+text-align: center;
+  }
+  .main-btn{
+    margin-left: 70px;
+  }
+  footer{
+    padding: 0px 0px;
+    gap: 0px;
+  }
+  .footer-column{
+    width: 80%;
+  
+  }
+
+  footer input[type="text"] ,footer input[type="email"] , footer textarea{
+    width: calc(100% - 40px);
+  }
+  .about-items{
+    flex-direction: column;
+  }
+  .about{
+    padding: 20px 30px;
+   
+  }
+
 }
